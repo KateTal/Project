@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+  <reporter-output>
+    <line>
+      <![CDATA[click to see Screenshot]]>
+    </line>
+    <line>
+      <![CDATA[<a target="_blank" href=null>Screenshot</a>]]>
+    </line>
+    <line>
+      <![CDATA[<br>]]>
+    </line>
+    <line>
+      <![CDATA[<a target="_blank" href=null><img scr=nullheight=200 width=200></img></a>]]>
+    </line>
+    <line>
+      <![CDATA[click to see Screenshot]]>
+    </line>
+    <line>
+      <![CDATA[<a target="_blank" href=null>Screenshot</a>]]>
+    </line>
+    <line>
+      <![CDATA[<br>]]>
+    </line>
+    <line>
+      <![CDATA[<a target="_blank" href=null><img scr=nullheight=200 width=200></img></a>]]>
+    </line>
+  </reporter-output>
+  <suite name="Data Driven Basics" duration-ms="2795" started-at="2021-12-04T21:21:30 MSK" finished-at="2021-12-04T21:21:33 MSK">
+    <groups>
+    </groups>
+    <test name="Bank Manager Login Test" duration-ms="248" started-at="2021-12-04T21:21:30 MSK" finished-at="2021-12-04T21:21:31 MSK">
+      <class name="com.w2a.testcases.BankManagerLoginTest">
+        <test-method status="PASS" signature="loginAsBankManger()[pri:0, instance:com.w2a.testcases.BankManagerLoginTest@2445445a]" name="loginAsBankManger" duration-ms="185" started-at="2021-12-04T21:21:30 MSK" finished-at="2021-12-04T21:21:31 MSK">
+          <reporter-output>
+            <line>
+              <![CDATA[click to see Screenshot]]>
+            </line>
+            <line>
+              <![CDATA[<a target="_blank" href=null>Screenshot</a>]]>
+            </line>
+            <line>
+              <![CDATA[<br>]]>
+            </line>
+            <line>
+              <![CDATA[<a target="_blank" href=null><img scr=nullheight=200 width=200></img></a>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- loginAsBankManger -->
+      </class> <!-- com.w2a.testcases.BankManagerLoginTest -->
+    </test> <!-- Bank Manager Login Test -->
+    <test name="Add Customer Test" duration-ms="2520" started-at="2021-12-04T21:21:31 MSK" finished-at="2021-12-04T21:21:33 MSK">
+      <class name="com.w2a.testcases.AddCustomerTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.w2a.testcases.AddCustomerTest@15dcfae7]" name="setUp" is-config="true" duration-ms="5772" started-at="2021-12-04T21:21:25 MSK" finished-at="2021-12-04T21:21:30 MSK">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="addCustomer(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.w2a.testcases.AddCustomerTest@15dcfae7]" name="addCustomer" duration-ms="2496" started-at="2021-12-04T21:21:31 MSK" data-provider="getData" finished-at="2021-12-04T21:21:33 MSK">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Raman]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Aura]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[dg454g]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Customer added successfully with]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[click to see Screenshot]]>
+            </line>
+            <line>
+              <![CDATA[<a target="_blank" href=null>Screenshot</a>]]>
+            </line>
+            <line>
+              <![CDATA[<br>]]>
+            </line>
+            <line>
+              <![CDATA[<a target="_blank" href=null><img scr=nullheight=200 width=200></img></a>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- addCustomer -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.w2a.testcases.AddCustomerTest@15dcfae7]" name="tearDown" is-config="true" duration-ms="1" started-at="2021-12-04T21:21:33 MSK" finished-at="2021-12-04T21:21:33 MSK">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.w2a.testcases.AddCustomerTest -->
+    </test> <!-- Add Customer Test -->
+  </suite> <!-- Data Driven Basics -->
+</testng-results>

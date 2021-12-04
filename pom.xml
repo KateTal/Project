@@ -3,7 +3,7 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.w2a</groupId>
-	<artifactId>NewDataDrivenFramework</artifactId>
+	<artifactId>Project</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<dependencies>
 
@@ -19,7 +19,7 @@
 		<dependency>
 			<groupId>com.aventstack</groupId>
 			<artifactId>extentreports</artifactId>
-			<version>5.0.8</version>
+			<version>5.0.9</version>
 		</dependency>
 
 		<!-- https://mvnrepository.com/artifact/org.uncommons/reportng -->
@@ -127,6 +127,16 @@
 				</configuration>
 			</plugin>
 		</plugins>
+		
+		<testResources>
+		<testResource>
+		<directory>src/test/resources/properties</directory>
+		<includes>
+		<include>log4j.properties</include>
+		</includes>
+		</testResource>
+		</testResources>
+		
 	</build>
 
 

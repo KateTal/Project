@@ -2,6 +2,8 @@ package com.w2a.testcases;
 
 
 
+import java.io.IOException;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -10,6 +12,7 @@ import org.testng.Reporter;
 import org.testng.annotations.Test;
 
 import com.w2a.base.TestBase;
+import com.w2a.utilities.TestUtil;
 
 public class BankManagerLoginTest extends TestBase {
 
@@ -25,7 +28,11 @@ public class BankManagerLoginTest extends TestBase {
 		
 		log.debug("Login executed");
 		
+	
+		
 		//Assert.fail("Login failed");
+		
+		
 		
 	
 	}

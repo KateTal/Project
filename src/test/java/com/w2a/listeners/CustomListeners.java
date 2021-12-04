@@ -24,8 +24,20 @@ public class CustomListeners implements ITestListener {
 		}
 		
 		public void onTestSuccess(ITestResult result) {
-			
+			System.setProperty("org.uncommons.reportng.escape-output", "false");
+			try {
+				TestUtil.captureScreenshot();
+			} catch (IOException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+			Reporter.log("click to see Screenshot");
+			Reporter.log("<a target=\"_blank\" href="+TestUtil.screenshotName+">Screenshot</a>");
+			Reporter.log("<br>"); //добавляет сроку, ниже под надписью повится скриншот
+			Reporter.log("<a target=\"_blank\" href="+TestUtil.screenshotName+"><img scr="+TestUtil.screenshotName+"height=200 width=200></img></a>");
 		}
+			
+		
 
 		public void onTestFailure(ITestResult result) {
 			System.setProperty("org.uncommons.reportng.escape-output", "false");
@@ -35,7 +47,8 @@ public class CustomListeners implements ITestListener {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
-			Reporter.log("<a href="+TestUtil.screenshotName+">Screenshot</a>");
+			Reporter.log("click to see Screenshot");
+			Reporter.log("<a target=\"_blank\" href="+TestUtil.screenshotName+">Screenshot</a>");
 			Reporter.log("<br>"); //добавляет сроку, ниже под надписью повится скриншот
 			Reporter.log("<a target=\"_blank\" href="+TestUtil.screenshotName+"><img scr="+TestUtil.screenshotName+"height=200 width=200></img></a>");
 		}
@@ -48,3 +61,5 @@ public class CustomListeners implements ITestListener {
 			
 		}
 }
+
+

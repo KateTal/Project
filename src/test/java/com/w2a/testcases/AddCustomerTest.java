@@ -27,6 +27,9 @@ public class AddCustomerTest extends TestBase {
 		Assert.assertTrue(alert.getText().contains(alerttext));
 		alert.accept();//нажимается кнопка ок. принять тоесть
 		
+
+	
+		
 	}
     @DataProvider //создаем дата провайдер
 	public Object[][] getData(){
@@ -47,8 +50,10 @@ public class AddCustomerTest extends TestBase {
 		}
 		
 		return data; 
+		
+		
 	}
-
+    
     	
     	
 	}
