@@ -18,6 +18,12 @@ import org.testng.annotations.BeforeSuite;
 
 import com.w2a.utilities.ExcelReader;
 
+
+
+
+
+
+
 public class TestBase {
 
 	/* До начала написания тестов инициализировать все следующее:
@@ -37,6 +43,9 @@ public class TestBase {
     public static FileInputStream fis;
     public static Logger log = Logger.getLogger("devpinoyLogger");//apache log4j...
 	public static ExcelReader excel = new ExcelReader(System.getProperty("user.dir") + "\\src\\test\\resources\\excel\\testdata.xlsx");
+	
+	
+	
 	
 	
 	@BeforeSuite //По задумке данный метод должен инициироваться перед всеми тесткейсами из Сьюта,  1.add testng library, 2.import....

@@ -7,6 +7,7 @@ import org.testng.ITestListener;
 import org.testng.ITestResult;
 import org.testng.Reporter;
 
+import com.w2a.base.TestBase;
 import com.w2a.utilities.TestUtil;
 
 public class CustomListeners implements ITestListener {
@@ -35,8 +36,13 @@ public class CustomListeners implements ITestListener {
 			Reporter.log("<a target=\"_blank\" href="+TestUtil.screenshotName+">Screenshot</a>");
 			Reporter.log("<br>"); //добавляет сроку, ниже под надписью повится скриншот
 			Reporter.log("<a target=\"_blank\" href="+TestUtil.screenshotName+"><img scr="+TestUtil.screenshotName+"height=200 width=200></img></a>");
+			
+			
+			
 		}
 			
+		
+		
 		
 
 		public void onTestFailure(ITestResult result) {

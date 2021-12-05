@@ -19,7 +19,7 @@ public class BankManagerLoginTest extends TestBase {
 	@Test
 	public void loginAsBankManger() throws InterruptedException {
 	
-		
+		//Assert.assertEquals("abc", "xyz");
 		log.debug("Inside loginTest");
 		WebDriverWait wait = new WebDriverWait(driver,20);
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector(OR.getProperty("bmlBtn")))).click();
