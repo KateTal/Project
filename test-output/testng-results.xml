@@ -1,103 +1,73 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+<testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
   <reporter-output>
-    <line>
-      <![CDATA[click to see Screenshot]]>
-    </line>
-    <line>
-      <![CDATA[<a target="_blank" href=null>Screenshot</a>]]>
-    </line>
-    <line>
-      <![CDATA[<br>]]>
-    </line>
-    <line>
-      <![CDATA[<a target="_blank" href=null><img scr=nullheight=200 width=200></img></a>]]>
-    </line>
-    <line>
-      <![CDATA[click to see Screenshot]]>
-    </line>
-    <line>
-      <![CDATA[<a target="_blank" href=null>Screenshot</a>]]>
-    </line>
-    <line>
-      <![CDATA[<br>]]>
-    </line>
-    <line>
-      <![CDATA[<a target="_blank" href=null><img scr=nullheight=200 width=200></img></a>]]>
-    </line>
   </reporter-output>
-  <suite name="Data Driven Basics" duration-ms="2795" started-at="2021-12-04T21:21:30 MSK" finished-at="2021-12-04T21:21:33 MSK">
+  <suite name="Default suite" duration-ms="485" started-at="2021-12-19T14:50:11 MSK" finished-at="2021-12-19T14:50:12 MSK">
     <groups>
     </groups>
-    <test name="Bank Manager Login Test" duration-ms="248" started-at="2021-12-04T21:21:30 MSK" finished-at="2021-12-04T21:21:31 MSK">
-      <class name="com.w2a.testcases.BankManagerLoginTest">
-        <test-method status="PASS" signature="loginAsBankManger()[pri:0, instance:com.w2a.testcases.BankManagerLoginTest@2445445a]" name="loginAsBankManger" duration-ms="185" started-at="2021-12-04T21:21:30 MSK" finished-at="2021-12-04T21:21:31 MSK">
-          <reporter-output>
-            <line>
-              <![CDATA[click to see Screenshot]]>
-            </line>
-            <line>
-              <![CDATA[<a target="_blank" href=null>Screenshot</a>]]>
-            </line>
-            <line>
-              <![CDATA[<br>]]>
-            </line>
-            <line>
-              <![CDATA[<a target="_blank" href=null><img scr=nullheight=200 width=200></img></a>]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- loginAsBankManger -->
-      </class> <!-- com.w2a.testcases.BankManagerLoginTest -->
-    </test> <!-- Bank Manager Login Test -->
-    <test name="Add Customer Test" duration-ms="2520" started-at="2021-12-04T21:21:31 MSK" finished-at="2021-12-04T21:21:33 MSK">
-      <class name="com.w2a.testcases.AddCustomerTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.w2a.testcases.AddCustomerTest@15dcfae7]" name="setUp" is-config="true" duration-ms="5772" started-at="2021-12-04T21:21:25 MSK" finished-at="2021-12-04T21:21:30 MSK">
+    <test name="Default test" duration-ms="485" started-at="2021-12-19T14:50:11 MSK" finished-at="2021-12-19T14:50:12 MSK">
+      <class name="com.w2a.testcases.OpenAccountTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.w2a.testcases.OpenAccountTest@16ce702d]" name="setUp" is-config="true" duration-ms="3447" started-at="2021-12-19T14:50:08 MSK" finished-at="2021-12-19T14:50:11 MSK">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="addCustomer(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.w2a.testcases.AddCustomerTest@15dcfae7]" name="addCustomer" duration-ms="2496" started-at="2021-12-04T21:21:31 MSK" data-provider="getData" finished-at="2021-12-04T21:21:33 MSK">
+        <test-method status="FAIL" signature="openAccountTest(java.lang.String,java.lang.String)[pri:0, instance:com.w2a.testcases.OpenAccountTest@16ce702d]" name="openAccountTest" duration-ms="448" started-at="2021-12-19T14:50:12 MSK" data-provider="dp" finished-at="2021-12-19T14:50:12 MSK">
           <params>
             <param index="0">
               <value>
-                <![CDATA[Raman]]>
+                <![CDATA[Raman Aura]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[Aura]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[dg454g]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[Customer added successfully with]]>
+                <![CDATA[Rupee]]>
               </value>
             </param>
           </params>
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+at org.openqa.selenium.support.ui.Select.<init>(Select.java:45)
+at com.w2a.testcases.OpenAccountTest.openAccountTest(OpenAccountTest.java:26)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(ArrayList.java:1259)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
-            <line>
-              <![CDATA[click to see Screenshot]]>
-            </line>
-            <line>
-              <![CDATA[<a target="_blank" href=null>Screenshot</a>]]>
-            </line>
-            <line>
-              <![CDATA[<br>]]>
-            </line>
-            <line>
-              <![CDATA[<a target="_blank" href=null><img scr=nullheight=200 width=200></img></a>]]>
-            </line>
           </reporter-output>
-        </test-method> <!-- addCustomer -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.w2a.testcases.AddCustomerTest@15dcfae7]" name="tearDown" is-config="true" duration-ms="1" started-at="2021-12-04T21:21:33 MSK" finished-at="2021-12-04T21:21:33 MSK">
+        </test-method> <!-- openAccountTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.w2a.testcases.OpenAccountTest@16ce702d]" name="tearDown" is-config="true" duration-ms="1" started-at="2021-12-19T14:50:12 MSK" finished-at="2021-12-19T14:50:12 MSK">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.w2a.testcases.AddCustomerTest -->
-    </test> <!-- Add Customer Test -->
-  </suite> <!-- Data Driven Basics -->
+      </class> <!-- com.w2a.testcases.OpenAccountTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

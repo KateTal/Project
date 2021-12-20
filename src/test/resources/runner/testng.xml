@@ -5,24 +5,29 @@
 <listeners>
 <listener class-name="org.uncommons.reportng.HTMLReporter"/>
 <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
-<listener class-name="com.w2a.listeners.CustomListeners"/>      
+<listener class-name="listeners.CustomListeners"/>
 </listeners>
 
 
   <test name="Bank Manager Login Test">
     <classes>
       
-      <class name="com.w2a.testcases.BankManagerLoginTest"/>
+      <class name="testcases.BankManagerLoginTest"/>
     </classes>
   </test> <!-- Test -->
   
    <test name="Add Customer Test">
     <classes>
       
-      <class name="com.w2a.testcases.AddCustomerTest"/>
+      <class name="testcases.AddCustomerTest"/>
     </classes>
   </test> <!-- Test -->
   
-  
+   <test name="Open Account Test">
+    <classes>
+      
+      <class name="testcases.OpenAccountTest"/>
+    </classes>
+  </test> <!-- Test -->
   
 </suite> <!-- Suite -->
